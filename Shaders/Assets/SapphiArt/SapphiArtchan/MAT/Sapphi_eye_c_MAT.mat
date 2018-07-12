@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Sapphi_eye_c_MAT
   m_Shader: {fileID: 4800000, guid: 4ee17cf176feb38498d6ec36d5851e61, type: 3}
-  m_ShaderKeywords: _OVERHEATING_ON
+  m_ShaderKeywords: _OVERHEATING_ON _USECOLOR_ON
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -63,7 +63,7 @@ Material:
     - _Amplitude: 0
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _CutoutThresh: 0.2
+    - _CutoutThresh: 0.03
     - _DetailNormalMapScale: 1
     - _Distance: 1
     - _DstBlend: 0
@@ -78,7 +78,8 @@ Material:
     - _SrcBlend: 1
     - _Transparency: 0.25
     - _UVSec: 0
+    - _UseColor: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.19755624, g: 0.56452703, b: 0.9264706, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

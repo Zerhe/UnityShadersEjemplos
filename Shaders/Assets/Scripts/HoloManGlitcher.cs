@@ -5,11 +5,11 @@ using UnityEngine;
 public class HoloManGlitcher : MonoBehaviour {
 
 
-	public float glitchChance = .1f;
+	public float glitchChance = 0.1f;
 
 	private Renderer holoRenderer;
-	private WaitForSeconds glitchLoopWait = new WaitForSeconds(.1f);
-	private WaitForSeconds glitchDuration = new WaitForSeconds(.1f);
+	private WaitForSeconds glitchLoopWait = new WaitForSeconds(0.1f);
+	private WaitForSeconds glitchDuration = new WaitForSeconds(0.1f);
 
 	void Awake()
 	{
@@ -34,9 +34,9 @@ public class HoloManGlitcher : MonoBehaviour {
 
 	IEnumerator Glitch()
 	{
-		glitchDuration = new WaitForSeconds(Random.Range(.05f,.25f));
+		glitchDuration = new WaitForSeconds(Random.Range(0.05f,0.25f));
 		holoRenderer.material.SetFloat ("_Amount", 1f);
-		holoRenderer.material.SetFloat ("_CutoutThresh", .29f);
+		holoRenderer.material.SetFloat ("_CutoutThresh", 0.29f);
 		holoRenderer.material.SetFloat ("_Amplitude", Random.Range (100, 250));
 		holoRenderer.material.SetFloat ("_Speed", Random.Range (1, 10));
 		yield return glitchDuration;

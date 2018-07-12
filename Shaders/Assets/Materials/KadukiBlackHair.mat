@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: KadukiBlackHair
   m_Shader: {fileID: 4800000, guid: 4ee17cf176feb38498d6ec36d5851e61, type: 3}
-  m_ShaderKeywords: _OVERHEATING_ON
+  m_ShaderKeywords: _USECOLOR_ON
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -55,15 +55,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureEffect:
-        m_Texture: {fileID: 2800000, guid: 1f3836a2a20291947ba8ba6578113fad, type: 3}
+        m_Texture: {fileID: 2800000, guid: b311b7d04acc95249a54946c4a811d11, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Amount: 1
-    - _Amplitude: 0
+    - _Amplitude: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _CutoutThresh: 0.2
+    - _CutoutThresh: 0.1
     - _DetailNormalMapScale: 1
     - _Distance: 1
     - _DstBlend: 0
@@ -73,15 +73,16 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Overheating: 1
+    - _Overheating: 0
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 0
+    - _Speed: 1
     - _SpeedOverheating: 2
     - _SrcBlend: 1
     - _Transparency: 0.25
     - _UVSec: 0
+    - _UseColor: 1
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.23985407, g: 0.43619457, b: 0.9245283, a: 1}

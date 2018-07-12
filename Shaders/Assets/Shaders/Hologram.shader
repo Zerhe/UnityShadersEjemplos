@@ -8,10 +8,9 @@
 		_Transparency("Transparency", Range(0.0,0.5)) = 0.25
 		_CutoutThresh("Cutout Threshold", Range(0.0,1.2)) = 0.2      // cantidad minima de un color para que se dibuje
 		_Distance("Distance", float) = 1
-		_Amplitude("Amplitude", float) = 1			//Amplitud en 0 para efecto de desaparecer
+		_Amplitude("Amplitude", float) = 1			
 		_Speed("Speed", float) = 1
 		_Amount("Amount", float) = 1
-		_Mode("Mode", Range(1,2)) = 0
 		[Toggle] _Overheating("Overheating", Float) = 0
 		_SpeedOverheating("SpeedOverheating", float) = 0.5
 
@@ -54,17 +53,13 @@
 			float _Amplitude;
 			float _Speed;
 			float _Amount;
-			float _Mode;
 			float _Overheating;
 			float _SpeedOverheating;
 			
 			v2f vert (appdata v)
 			{
 				v2f o;
-				if(_Mode == 1)
-					v.vertex.x += cos(_Time.y * _Speed + v.vertex.y * _Amplitude) * _Distance * _Amount;   //Activar script de holograma para hacer efecto glicht
-				else
-					v.vertex.x += tan(_Time.y * _Speed + v.vertex.y * _Amplitude) * _Distance * _Amount;  // efecto deslisar horizontalmente y cortocircuito
+				v.vertex.x += cos(_Time.y * _Speed + v.vertex.y * _Amplitude) * _Distance * _Amount;   //Activar script de holograma para hacer efecto glicht
 				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 				return o;

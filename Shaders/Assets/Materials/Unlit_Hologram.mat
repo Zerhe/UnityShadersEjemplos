@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Unlit_Hologram
   m_Shader: {fileID: 4800000, guid: 4ee17cf176feb38498d6ec36d5851e61, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _OVERHEATING_ON _USECOLOR_ON
+  m_ShaderKeywords: _ALPHATEST_ON _USECOLOR_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -46,6 +46,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: e887f4d92284f344d825e212f0becced, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -59,14 +63,18 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Amount: 1
-    - _Amplitude: 1
+    - _Amount: 0
+    - _Amplitude: 0
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _CutoutThresh: 0
+    - _CutoutThreshGlitch: 0.3
     - _DetailNormalMapScale: 1
     - _Distance: 1
     - _DstBlend: 0
+    - _GlitchChance: 0.4
+    - _GlitchCutoutThresh: 0.3
+    - _GlitchSpeed: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -74,11 +82,11 @@ Material:
     - _Mode: 2
     - _Moode: 1
     - _OcclusionStrength: 1
-    - _Overheating: 1
+    - _Overheating: 0
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 1
+    - _Speed: 0
     - _SpeedOverheating: 1
     - _SrcBlend: 1
     - _Transparency: 0.256
@@ -86,6 +94,7 @@ Material:
     - _UseColor: 1
     - _ZWrite: 1
     - _isBending: 0
+    - _timer: 0
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0.44117647, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

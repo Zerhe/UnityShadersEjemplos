@@ -23,7 +23,6 @@ public class ChangeColor : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        print(timer);
         if (timer > 2)
         {
             print("Change");

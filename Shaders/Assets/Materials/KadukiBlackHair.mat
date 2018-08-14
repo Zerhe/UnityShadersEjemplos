@@ -46,6 +46,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: e887f4d92284f344d825e212f0becced, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -55,18 +59,22 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureEffect:
-        m_Texture: {fileID: 2800000, guid: b311b7d04acc95249a54946c4a811d11, type: 3}
+        m_Texture: {fileID: 2800000, guid: c71fdb574b56c1146961c2e4bbb9689e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Amount: 1
-    - _Amplitude: 1
+    - _Amount: 0
+    - _Amplitude: 0
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _CutoutThresh: 0.1
+    - _CutoutThresh: 0.339
+    - _CutoutThreshGlitch: 0.494
     - _DetailNormalMapScale: 1
-    - _Distance: 1
+    - _Distance: 0.6
     - _DstBlend: 0
+    - _GlitchChance: 0.484
+    - _GlitchCutoutThresh: 0.2
+    - _GlitchSpeed: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -77,13 +85,14 @@ Material:
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 1
-    - _SpeedOverheating: 2
+    - _Speed: 0
+    - _SpeedOverheating: 1
     - _SrcBlend: 1
     - _Transparency: 0.25
     - _UVSec: 0
     - _UseColor: 1
     - _ZWrite: 1
+    - _timer: 0
     m_Colors:
     - _Color: {r: 0.23985407, g: 0.43619457, b: 0.9245283, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
